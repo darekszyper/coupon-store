@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Registration Page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header-side to-left">
+            <a href="add-new-item.html"><i class="material-icons">menu</i></a>
+            <a class="logo" href="main-page.html">Logo</a>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search by item name">
+            <select name="categories">
+                <option value="">All Categories</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+            </select>
+        </div>
+        
+        <div class="header-side to-right">
+            <a href="item-details.html"><i class="material-icons">favorite</i></a>
+            <a href="checkout.html"><i class="material-icons">shopping_cart</i></a>
+            <a href="login.html">Login</a> | <a href="register.html">Sign Up</a>
+        </div>
+    </header>
+
+    <main class="register-container">
+        <h1>Register</h1>
+            <form action="#">
+                <label>
+                    <p>Login Name</p>
+                    <input type="text" name="loginName">
+                </label>
+                
+                <label>
+                    <p>First Name</p>
+                    <input type="text" name="firstName">
+                </label>
+                
+                <label>
+                    <p>Password</p>
+                    <input type="password" name="password">
+                </label>
+                
+                <label>
+                    <p>Repeat Password</p>
+                    <input type="password" name="repeatPassword">
+                </label>
+                
+                <label>
+                    <p>Email</p>
+                    <input type="email" name="email">
+                </label>
+                
+                <label>
+                    <p>Address</p>
+                    <input type="text" name="address">
+                </label>           
+                <div class="register-button-container">
+                    <button type="button" class="cancel">Cancel</button>
+                    <button type="submit" class="confirm">Sign Up</button>
+                </div>
+            </form>       
+    </main>
+</body>
+
+</html>

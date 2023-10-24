@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header-side to-left">
+            <a href="add-new-item.html"><i class="material-icons">menu</i></a>
+            <a class="logo" href="main-page.html">Logo</a>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search by item name">
+            <select name="categories">
+                <option value="">All Categories</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+            </select>
+        </div>
+        
+        <div class="header-side to-right">
+            <a href="item-details.html"><i class="material-icons">favorite</i></a>
+            <a href="checkout.html"><i class="material-icons">shopping_cart</i></a>
+            <a href="login.html">Login</a> | <a href="register.html">Sign Up</a>
+        </div>
+    </header>
+
+    <h1 class="checkout-header">Checkout</h1>
+    <main class="checkout-container">
+        <div class="checkout-list">
+            <div class="checkout-item">
+                <div class="checkout-picture-name">
+                    <div class="checkout-picture"></div>
+                    <div>
+                        <h3>Coupon Name</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+                </div>
+                <div class="checkout-price">$200</div>
+            </div>
+
+            <div class="checkout-item">
+                <div class="checkout-picture-name">
+                    <div class="checkout-picture"></div>
+                    <div>
+                        <h3>Coupon Name</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+                </div>
+                <div class="checkout-price">$200</div>
+            </div>
+
+            <div class="checkout-item">
+                <div class="checkout-picture-name">
+                    <div class="checkout-picture"></div>
+                    <div>
+                        <h3>Coupon Name</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+                </div>
+                <div class="checkout-price">$200</div>
+            </div>
+        </div>
+        <div class="total">
+            Total: $600
+        </div>
+        <div class="checkout-actions">
+            <button class="cancel">Back</button>
+            <button class="confirm">Checkout</button>
+        </div>
+    </main>
+</body>
+
+</html>

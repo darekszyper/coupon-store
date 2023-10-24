@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Add New Coupon</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header-side to-left">
+            <a href="add-new-item.html"><i class="material-icons">menu</i></a>
+            <a class="logo" href="main-page.html">Logo</a>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search by item name">
+            <select name="categories">
+                <option value="">All Categories</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+            </select>
+        </div>
+        
+        <div class="header-side to-right">
+            <a href="item-details.html"><i class="material-icons">favorite</i></a>
+            <a href="checkout.html"><i class="material-icons">shopping_cart</i></a>
+            <a href="login.html">Login</a> | <a href="register.html">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="new-coupon-header">Add New Coupon</h1>
+        <form action="#" class="container">
+            <div class="new-coupon-left-container">
+                <label><p>Company</p>
+                    <input type="text" name="company">
+                </label>
+                <label><p>Category</p>
+                    <select name="category">
+                        <option value="">Category Name</option>
+                        <option value="option1">Option 1</option>
+                    </select>
+                </label>
+                <label><p>Valid to</p>
+                    <input type="datetime-local" name="validTo" value="2020-12-12T02:00">
+                </label>
+                <label><p>Price</p>
+                    <input type="text" name="price" placeholder="Price">
+                </label>
+                <label for="pictures"><p>Images</p></label>
+                <label class="file-input">
+                    <span class="material-icons">
+                    collections
+                    </span>
+                    <input id="pictures" type="file" name="images">
+                </label>
+            </div>
+
+            <div class="new-coupon-right-container">
+                <label><p>Item Name</p>
+                    <input type="text" name="itemName">
+                </label>
+                <label><p>Short Description</p>
+                    <textarea name="shortDescription"></textarea>
+                </label>
+                <label><p>Long Description</p>
+                    <textarea name="longDescription"></textarea>
+                </label>
+                <button type="button" class="cancel">Back</button>
+                <button type="submit" class="confirm">Save</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
